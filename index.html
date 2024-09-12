@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Physics Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        embed {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- A single page website to show a pdf document and a download button to download that document -->
+    <h1>Applied Physics Book</h1>
+    <a href="https://drive.google.com/file/d/1y-ZRKSfzT-N0ACH4Vg91-3xnnZFpzGHb/view?usp=sharing" download="applied_physics.pdf"></a>
+    
+    <div style="text-align: center;">
+        <button>Download Now</button>
+        <br>
+        <embed src="https://drive.google.com/file/d/1y-ZRKSfzT-N0ACH4Vg91-3xnnZFpzGHb/view?usp=sharing" width="95%" height="800px" />
+        <br>
+    </div>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>&copy; 2024 <a href="https://fsbest.store" target="_blank">FSBest</a> | Developed By Ali Tahir</p>
+    </footer>
+    <script>
+        const button = document.querySelector('button');
+        const a = document.querySelector('a');
+        button.addEventListener('click', () => {
+            a.click();
+        });
+    </script>
+
+    
+
+</body>
+
+</html>
